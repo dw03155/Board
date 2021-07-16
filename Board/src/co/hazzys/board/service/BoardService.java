@@ -8,6 +8,6 @@ public interface BoardService {
 	List<BoardVO> selectList();
 	BoardVO boardSelect(BoardVO vo);
 	int boardInsert(BoardVO vo);
-//	int boardUpdate(BoardVO vo);
+	int boardUpdate(BoardVO vo);
 	int boardDelete(BoardVO vo);
 }

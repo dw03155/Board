@@ -64,10 +64,9 @@ public class BoardVO {
 
 	@Override
 	public String toString() {
-		System.out.println("<< 게시판 >>");
-		System.out.println("번호\t|작성자\t|제목\t|작성일자\t|조회수");
-		System.out.println(boardId + "\t|" + writer + "\t|" + title + "\t|"
-		+ enterdate + "\t|" + hit );
+		System.out.printf("%-4s %-6s %-9s %-10s %-10s",
+				"|"+boardId,"|"+writer,"|"+title,"|"+enterdate,"|"+hit);
+		System.out.println();
 		return null;
 	}
 
