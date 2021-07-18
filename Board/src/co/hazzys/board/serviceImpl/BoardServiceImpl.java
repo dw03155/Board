@@ -112,5 +112,4 @@ public class BoardServiceImpl extends DAO implements BoardService {
 		}
 		return n;
 	}//end of BD
-
-}
+}//end of class
