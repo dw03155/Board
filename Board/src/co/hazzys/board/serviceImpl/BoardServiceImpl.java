@@ -97,7 +97,7 @@ public class BoardServiceImpl extends DAO implements BoardService {
 			e.printStackTrace();
 		}
 		return n;
-	}
+	}//end of BU
 	
 	@Override
 	public int boardDelete(BoardVO vo) {
