@@ -32,7 +32,7 @@ public class BoardServiceImpl extends DAO implements BoardService {
 				vo.setHit(rs.getInt("hit"));
 				posts.add(vo);
 			}
-		} catch (Exception e) {
+		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		return posts;
@@ -61,7 +61,7 @@ public class BoardServiceImpl extends DAO implements BoardService {
 			psmt = conn.prepareStatement(sql);
 			psmt.setString(1, boardId);
 			psmt.executeUpdate();
-		} catch (Exception e) {
+		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}//end of HU
